@@ -93,7 +93,7 @@ Trunk Ports: switch to switch:
 TAAS/BABA:
 config t
 Int Range fa0/10-12
- shutdown
+ !shutdown
  no shutdown
  switchport trunk Encap Dot1Q
  switchport mode trunk
@@ -189,17 +189,17 @@ config t
 ip routing
 ip dhcp pool CAMERA6
 host 10.62.50.6 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.070b.472e
 ip dhcp pool CAMERA8
 host 10.62.50.8 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0706.c302
 end
 show ip dhcp binding
 
 TASK2***TASK2***TASK2***
 TASK2***TASK2***TASK2***
 CALLMANAGER EXPRESS CONFIGURATION FOR VOIP/TELEPHONY ENGINEERS
-!!cisco unified call manager Express command
+!!cisco unified call manager Express command 203-221
 !@@@CUCM-M
 config t
    hostname CUCM-62
@@ -220,7 +220,7 @@ config t
 	 ip add 10.62.100.8 255.255.255.0 
 	 end
    
-!!!CUCM ANALOG PHONES CONFIG
+!!!CUCM ANALOG PHONES CONFIG 224-237
 configure terminal
 dial-peer voice 1 pots
    destination-pattern 6200
@@ -267,12 +267,12 @@ ephone-dn 8
 ephone-dn 10
  number 6298
 Ephone 1
-  Mac-address cafe.face.baba
+  Mac-address 203a.0782.bd3b
   type 8945
   button 1:8 2:7 3:6 4:5
   restart
 Ephone 2
-  Mac-address fafa.caca.baba
+  Mac-address ccd8.c1fb.1519
   type 8945
   button 1:4 2:3 3:2 4:1
   restart  
@@ -660,4 +660,5 @@ exit
           
 sip-ua
 sip-server ipv4:192.168.k.1
+
 
