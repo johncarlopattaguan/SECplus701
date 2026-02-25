@@ -94,9 +94,33 @@ no shut
 --------------
 conf t
 logging on
-logging host 208.8.8.133 trasport udo port 9001
+logging host 208.8.8.133 transport udp port 9001
 logging trap informational 
 -------------- 
+conf t
+archive
+log config
+logging enable
+notify syslog
+end
+--------------
+conf t
+login onfailure log
+log on sucess log
+--------------
+conf t
+access-list 100 deny ip any host 208.8.8.80 log
+access-list permit ip any any
+interface g1
+ip access-group 100 in
+end
+--------------
+
+
+http://208.8.8.133:5601/
+ sudo systemctl start elasticsearch.service 
+ admin
+ C1sc0123
 
 
 
