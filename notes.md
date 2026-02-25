@@ -95,7 +95,8 @@ no shut
 conf t
 logging on
 logging host 208.8.8.133 transport udp port 9001
-logging trap informational 
+logging trap informational
+end
 -------------- 
 conf t
 archive
