@@ -366,6 +366,15 @@ dial-peer voice 82 Voip
  destination-pattern 82..
  session target ipv4:10.82.100.8
  codec g711ULAW
+dial-peer voice 91 Voip
+ destination-pattern 91..
+ session target ipv4:10.91.100.8
+ codec g711ULAW
+dial-peer voice 92 Voip
+ destination-pattern 92..
+ session target ipv4:10.92.100.8
+ codec g711ULAW
+
 
 TASK3***TASK3***TASK3***
 TASK3***TASK3***TASK3***
@@ -450,6 +459,8 @@ conf t
  ip route 10.72.0.0 255.255.0.0 200.0.0.72
  ip route 10.81.0.0 255.255.0.0 200.0.0.81
  ip route 10.82.0.0 255.255.0.0 200.0.0.82
+ ip route 10.91.0.0 255.255.0.0 200.0.0.91
+ ip route 10.92.0.0 255.255.0.0 200.0.0.92
  ip route 10.62.0.0 255.255.0.0 10.62.62.4
  NO ip route 10.62.0.0 255.255.0.0 200.0.0.62
  end
@@ -661,6 +672,7 @@ exit
           
 sip-ua
 sip-server ipv4:192.168.k.1
+
 
 
 
