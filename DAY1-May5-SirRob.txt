@@ -89,6 +89,7 @@ show ip ssh
 
 WARNING: IF YOU SEE AMBER/ORANGE= NEEDS FIXING!!!
 
+John --Step 5: Configuring IEEE 802.1Q Trunk Links
 Trunk Ports: switch to switch:
 TAAS/BABA:
 config t
@@ -236,7 +237,7 @@ dial-peer voice 4 pots
    port 0/0/3
 end
 
-!!IP telephony or Six Digit Salary.
+!!IP telephony or Six Digit Salary. (Paste it TWICE!!)
 config t   
 no telephony-service
 telephony-service
@@ -660,5 +661,6 @@ exit
           
 sip-ua
 sip-server ipv4:192.168.k.1
+
 
 
