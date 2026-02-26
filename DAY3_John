@@ -1,4 +1,4 @@
-Day
+Day 3 - Metasploit and Fail 2 Ban
 
 HIDS = HOST-BASED INTRUSTION DETECTION SYSTEM 
 NIDS = NETWORK INSTRUSION DETECTION SYSTEM
@@ -12,5 +12,21 @@ Kali
 
 Sudo su 
 Kali
+
+
+sudo nano /etc/filebeat/filebeat.yml
+
+set pass_file /ho,e/kali/Desktop/pass.txt
+set pass_file /ho,e/kali/Desktop/pass.txt
+
+------
+
+enabled = true
+port = ssh
+logpath = /var/log/secure
+maxretry = 5
+bantime = 300 
+findtime = 60
+action = firwallcmd-allports
 
 
